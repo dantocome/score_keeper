@@ -17,17 +17,24 @@
             background-color: green;
             width: 600px;
             height: 500px;
+            text-align: center;
+        }
+        #home{
+            border: 1px solid white;
+            
         }
     </style>
 </head>
 <body>
     <div class="winnig_container">
       <p>Winnig Score: <span>5</span></p>
+      <div id="home">
       <input type="number">
       <h1><span id="p1Display">0</span>:<span  id="p2Display">0</span></h1>
-      <button id="p1Button">Player one</button>
-      <button id="p2Button">Player two</button>
+      <button id="p1Button">Home Team</button>
+      <button id="p2Button">Visitor Team</button>
       <button id="resetButton">Reset</button>
+      </div>
       </div>
 
       <script src="js/score_keeper.js"></script>
