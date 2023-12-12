@@ -5,6 +5,8 @@ var numInput = document.querySelector("input");
 var p1Button = document.getElementById("p1Button");
 var p2Button = document.getElementById("p2Button");
 var resetButton = document.getElementById("resetButton");
+var dotted = document.getElementById("dot");
+var isred = false;
 
 p1Score = 0;
 p2Score = 0;
@@ -46,4 +48,13 @@ numInput.addEventListener("change", function(){
     winningScoreDisplay.textContent = numInput.value;
     winningScore = Number(numInput.value);
 })
+
+changeInterval (()=>{
+    if(isred){
+        dotted.style.color= "green"
+    }else{
+        dotted.style.color = "red";
+    }
+    isred = !isred;
+},1000);
 

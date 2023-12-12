@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Score keeper</title>
     <style>
         .winner{
             color: green;
         }
+        #dot{
+            font-size: 50px;
+            color: red;
+        }
+        .winnig_container{
+            background-color: green;
+            width: 600px;
+            height: 500px;
+        }
     </style>
 </head>
 <body>
-    <h1><span><select>
-        <option value="default">select Team</option>
-        <option value="">Man united</option>
-        <option value="">Chelsea</option>
-      </select></span><span id="p1Display">0</span> to <span  id="p2Display">0</span></h1>
-      <p>Playing to: <span>5</span></p>
+    <div class="winnig_container">
+      <p>Winnig Score: <span>5</span></p>
       <input type="number">
+      <h1><span id="p1Display">0</span>:<span  id="p2Display">0</span></h1>
       <button id="p1Button">Player one</button>
       <button id="p2Button">Player two</button>
       <button id="resetButton">Reset</button>
+      </div>
 
       <script src="js/score_keeper.js"></script>
 </body>
