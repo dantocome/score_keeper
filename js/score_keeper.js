@@ -1,6 +1,6 @@
 var p1Display = document.getElementById("p1Display");
 var p2Display = document.getElementById("p2Display");
-var winningScoreDisdplay = document.querySelector("p span");
+var winningScoreDisplay = document.querySelector("p span");
 var numInput = document.querySelector("input");
 var p1Button = document.getElementById("p1Button");
 var p2Button = document.getElementById("p2Button");
@@ -38,6 +38,12 @@ resetButton.addEventListener("click", function(){
     p2Score = 0;
     p1Display.textContent = p1Score;
     p2Display.textContent = p2Score;
+    p1Display.classList.remove("winner");
+    p2Display.classList.remove("winner");
 })
 
+numInput.addEventListener("change", function(){
+    winningScoreDisplay.textContent = numInput.value;
+    winningScore = Number(numInput.value);
+})
 
