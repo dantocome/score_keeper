@@ -7,7 +7,7 @@
     <title>Score keeper</title>
     <style>
         .winner{
-            color: green;
+            color: red
         }
         #dot{
             font-size: 50px;
@@ -32,9 +32,14 @@
             background-color: black;
             color: red;
             border: 3px solid green;
+            border-radius: 2px;
             outline: 3px solid white;
+            shape-outside: 2px;
             margin-top: 2px;
             
+        }
+        input[type="number"]:hover{
+            background-color: lawngreen;
         }
         p{
             color: white;
@@ -42,10 +47,17 @@
             font-size: 30px;
             padding-top: 20px;
         }
-        .input1{
-            
+        #p1Display{
+            background-color: black
             
         }
+        #p2Display{
+            background-color: black;
+        }
+        h1{
+            color: orange;
+        }
+        
     </style>
 </head>
 <body>
@@ -56,8 +68,8 @@
       <input type="number">
       </div>
       <h1><span id="p1Display">0</span>:<span  id="p2Display">0</span></h1>
-      <button id="p1Button">Home Team</button>
-      <button id="p2Button">Visitor Team</button>
+      <button id="p1Button">Home</button>
+      <button id="p2Button">Visitor</button>
       <button id="resetButton">Reset</button>
       </div>
       </div>
