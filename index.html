@@ -62,7 +62,9 @@
             border: 1px solid white;
         }
         .flex{
-            
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         
@@ -75,7 +77,10 @@
         <div class="input1">
       <input type="number">
       </div>
-      <div class="container1"><h1><span id="p1Display">0</span></h1></div>:<div class="container2"><h1><span  id="p2Display">0</span></h1></div>
+      <div class="flex">
+      <div class="container1"><h1><span id="p1Display">0</span></h1></div>
+      <div class="container2"><h1><span  id="p2Display">0</span></h1></div>
+      </div>
       <button id="p1Button">Home</button>
       <button id="p2Button">Visitor</button>
       <button id="resetButton">Reset</button>
