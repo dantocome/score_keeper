@@ -43,6 +43,7 @@ resetButton.addEventListener("click", function(){
     p1Display.classList.remove("winner");
     p2Display.classList.remove("winner");
     winningScoreDisplay.textContent = 0;
+    
 })
 
 numInput.addEventListener("change", function(){
